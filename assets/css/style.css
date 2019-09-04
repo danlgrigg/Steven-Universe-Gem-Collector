@@ -1,3 +1,7 @@
+/* body{
+    background-image: url("../images/the-dark-crystal.jpg");
+} */
+
 #header {
 
 }
@@ -7,5 +11,21 @@
 }
 
 .btn {
+}
 
+.button-one {
+    background-image: url("../images/blue-gem.jpg");
+}
+
+.button-two {
+    background-image: url("../images/green-gem.jpg");
+}
+
+.button-three {
+    background-image: url("../images/more-rainbow-gem.jpg");
+
+}
+
+.button-four {
+    background-image: url("../images/red-gem.jpg");
 }
