@@ -1,12 +1,19 @@
-/* body{
-    background-image: url("../images/the-dark-crystal.jpg");
-} */
+body{
+    background-image: url("/assets/images/steven-starry-background.png");
+}
 
 #header {
+    color: tomato;
+    font-weight: bolder;
+    font-style: oblique;
+    
 
 }
 
 #instruction {
+    color: tomato;
+    font-weight: bolder;
+    font-style: oblique;
 
 }
 
@@ -14,18 +21,18 @@
 }
 
 .button-one {
-    background-image: url("../images/blue-gem.jpg");
+    background-image: url("/assets/images/garnet.jpg");
 }
 
 .button-two {
-    background-image: url("../images/green-gem.jpg");
+    background-image: url("/assets/images/amethyst.jpg");
 }
 
 .button-three {
-    background-image: url("../images/more-rainbow-gem.jpg");
+    background-image: url("/assets/images/pearl.jpg");
 
 }
 
 .button-four {
-    background-image: url("../images/red-gem.jpg");
+    background-image: url("/assets/images/steven.jpg");
 }
