@@ -7,7 +7,7 @@ $(document).ready(function(){
 
     //display targetScore and userScore
     $("#target-score-display").text(targetScore);
-    // $("#current-score-display").text(userScore);
+ 
         
         
     //Create click events for each Gem button to generate random number 1-12 and store value for each click; reset after game win/loss
@@ -34,7 +34,6 @@ $(document).ready(function(){
         userScore+= gemChoiceThree;
         $("#current-score-display").text(userScore);
         conditionChecker();
-
     })
     
     $(".button-four").on("click", function(event){
@@ -42,15 +41,14 @@ $(document).ready(function(){
         $("#current-score-display").text(userScore);
         conditionChecker();
     })
+
     //Create conditions for Wins Losses and display on Game Counter, apply reset
     function conditionChecker (){
         if (userScore === targetScore) {
                 wins++;
                 $("#wins").text(wins)
                 alert("You chose...Wisely!!")
-                resetGame();
-                
-               
+                resetGame()
             }
 
             if (userScore > targetScore) {
@@ -58,9 +56,7 @@ $(document).ready(function(){
                 losses++;
                 $("#losses").text(losses);
                 resetGame();
-              
-               
-            }
+           }
     }
         //Create a Reset function; must regenerate Computer Choice and all Gem Choice values, and reset current game score counter
     function resetGame() {

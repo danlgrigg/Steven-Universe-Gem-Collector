@@ -13,56 +13,65 @@
     <div class="container">
       <!--Display header-->
       <div class="row">
-        <div class="col-sm-8 cells header">
-            <img src="./assets/images/steven-title.jpg">
-          <h1>Gem Collector</h1>
-        </div>
-      </div>
-      <!--Display instructions-->
-      <div class="row">
-        <div class="col-sm-8 cells instruction">
-          <p>Click on a character to add gems to your current score and try to collect the exact amount of gems needed!!</p>
+        <div class="col-md-9">
+          <div class="row">
+            <div class="col-lg-12 cells header">
+              <img id="img-title" src="./assets/images/steven-title.jpg">
+              <h1>Gem Collector</h1>
             </div>
           </div>
-          <!--Display targetScore and currentSccore -->
-      <div class="row">
-        <div class="col-sm-4 cells">
-            <div>Gems Goal: <span id="target-score-display"></span></div>
-        </div>
-        <div class="col-sm-4 cells">
-            <div>Current Gems:  <span id="current-score-display"></span></div>
+          <!--Display instructions-->
+          <div class="row">
+            <div class="col-lg-12 cells instructions">
+              <p>Click on a character to add gems to your current score and try to collect the exact amount of gems needed!!</p>
+            </div>
+          </div>
         </div>
       </div>
-       <!--Create buttons out of the 4 gem images-->
-          <div class="row">
-            <div class="col-md-3">
-                <img class="img" src="./assets/images/garnet.jpg">
-                <button class="btn button-one">Garnet</button>
-              </div>
-              <div class="col-md-3">
-                <img class="img" src="./assets/images/amethyst.jpg">
-                <button class="btn button-two">Amethyst</button>
-              </div>
-              <div class="col-md-3">
-                <img class="img" src="./assets/images/pearl.jpg">
-                <button class="btn button-three">Pearl</button>
-              </div>
-              <div class="col-md-3">
-                  <img class="img" srcgit="./assets/images/steven.jpg">
-                <button class="btn button-four"></button>
-              </div>
+      <!--Display targetScore and currentSccore -->
+        <div class="col-md-6">
+          <div class="row counter-container">
+            <div class="col-lg-6 cells">
+              <div>Gems Goal: <span id="target-score-display"></span></div>
+            </div>
+            <div class="col-lg-6 cells">
+              <div>Current Gems:  <span id="current-score-display"></span></div>
+            </div>
           </div>
-          <!--create a Wins Losses div-->
+            <!--Create buttons out of the 4 gem images-->
+          <div class="row button-container">
+            <div class="col-md-6">
+              <img class="img-btn" src="./assets/images/garnet.jpg">
+              <button class="btn button-one">Garnet</button>
+            </div>
+            <div class="col-md-6">
+              <img class="img-btn" src="./assets/images/amethyst.jpg">
+              <button class="btn button-two">Amethyst</button>
+            </div>
+            <div class="col-md-6">
+              <img class="img-btn" src="./assets/images/pearl.jpg">
+              <button class="btn button-three">Pearl</button>
+            </div>
+            <div class="col-md-6">
+              <img class="img-btn" src="./assets/images/steven.jpg">
+              <button class="btn button-four">Steven</button>
+            </div>
+          </div>
+         <!--create a Wins Losses div-->
           <div class="row">
-            <div class="col-sm-3 cells">
+            <div class="col-lg-6 cells">
                 <div>Wins: <span id="wins"></span></div>
             </div>
-            <div class="col-sm-3 cells">
+            <div class="col-lg-6 cells">
                 <div>Losses: <span id="losses"></span></div>
             </div>
-          </div>
+          </div>    
         </div>
-    <script
+      </div>
+    </div>
+  </div>
+  <!-- pull in Jquery -->
+  <script
       src="https://code.jquery.com/jquery-3.4.1.js"
       integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
       crossorigin="anonymous"></script>
