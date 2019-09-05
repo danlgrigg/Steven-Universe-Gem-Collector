@@ -1,38 +1,74 @@
 body{
-    /* background-image: url("../images/steven-starry-background.png"); */
-}
-
-#header {
-    color: tomato;
+    background-image: url("../images/steven-starry-background.png");
+    width: 100%;
+    height: 100%;
+    color: rgb(243, 245, 109);
     font-weight: bolder;
     font-style: oblique;
+    text-shadow: .2rem .2rem 0rem tomato;
+    text-align: center;
+    font-size: 2rem;
+}
+  
+.container { 
+   float: left;
+   width: 90%;
+   height: auto;
+   
+} 
+
+.header {
+    display: inline;
+    background-color: blueviolet;
+    border-radius: 1rem;
+    font-size: 3rem;
+}
+
+.instruction {
+    background-color:blueviolet;
+    opacity: .8;
+    border-radius: 2rem; 
     
-
 }
 
-#instruction {
-    color: tomato;
-    font-weight: bolder;
-    font-style: oblique;
-
+.cells{
+    background-color:blueviolet;
+    opacity: .8;
+    border: .2rem outset rgb(243, 245, 109);
+    border-radius: 1rem;
+    margin: 3%;
 }
 
+.img{
+    height: 6rem;
+    width: 6rem;
+    border-radius: 1rem; 
+    border: .25rem solid blueviolet;
+}
 .btn {
+    border: .25rem solid blueviolet;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 1rem;
+    /* display: grid;
+    justify-content: right; */
+    
 }
 
-.button-one {
-    /* background-image: url("../images/garnet.jpg"); */
+/* .button-three {
+    background-image: url("../images/pearl.jpg");
 }
 
-.button-two {
-    /* background-image: url("../images/amethyst.jpg"); */
+.button-four{
+    background-image: url("../images/steven.jpg");
+} */
+
+/* #wins {
+   
+
 }
 
-.button-three {
-    /* background-image: url("../images/pearl.jpg"); */
-
-}
-
-.button-four {
-    /* background-image: url("..images/steven.jpg"); */
-}
+#losses {
+   
+   
+}  */
