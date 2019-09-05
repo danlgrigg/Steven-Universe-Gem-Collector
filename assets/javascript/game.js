@@ -21,38 +21,58 @@ $(document).ready(function(){
     $(".button-one").on("click", function(event){
         userScore+= gemChoiceOne;
         $("#current-score-display").text(userScore);
+        conditionChecker();
     })
 
     $(".button-two").on("click", function(event){
         userScore+= gemChoiceTwo;
         $("#current-score-display").text(userScore);
+        conditionChecker();
     })
 
     $(".button-three").on("click", function(event){
         userScore+= gemChoiceThree;
         $("#current-score-display").text(userScore);
+        conditionChecker();
+
     })
     
     $(".button-four").on("click", function(event){
         userScore+= gemChoiceFour;
         $("#current-score-display").text(userScore);
+        conditionChecker();
     })
-
-    if (userScore === targetScore) {
-        wins++;
-        alert("You chose...Wisely!!")
-        userScore=0;
-        var targetScore = Math.floor(Math.random() * 120) +1;
-                
-    }
-
-    if (userScore > targetScore) {
-        alert("You chose...Poorly.");
-        losses++;
-        userScore=0;
-        var targetScore = Math.floor(Math.random() * 120) +1;
-    }
-
-    //Create a Reset function; must regenerate Computer Choice and all Gem Choice values, and reset current game score counter
     //Create conditions for Wins Losses and display on Game Counter, apply reset
+    function conditionChecker (){
+        if (userScore === targetScore) {
+                wins++;
+                $("#wins").text(wins)
+                alert("You chose...Wisely!!")
+                resetGame();
+                
+               
+            }
+
+            if (userScore > targetScore) {
+                alert("You chose...Poorly.");
+                losses++;
+                $("#losses").text(losses);
+                resetGame();
+              
+               
+            }
+    }
+        //Create a Reset function; must regenerate Computer Choice and all Gem Choice values, and reset current game score counter
+    function resetGame() {
+        userScore=0;
+        $("#current-score-display").text(userScore)
+        targetScore = Math.floor(Math.random() * 120) +1;
+        gemChoiceOne = Math.floor(Math.random() * 12) + 1;
+        gemChoiceTwo = Math.floor(Math.random() * 12) + 1;
+        gemChoiceThree= Math.floor(Math.random() * 12) + 1;
+        gemChoiceFour = Math.floor(Math.random() * 12) + 1;
+        $("#target-score-display").text(targetScore);
+
+    }
+
 })

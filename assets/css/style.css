@@ -1,5 +1,5 @@
 body{
-    background-image: url("/assets/images/steven-starry-background.png");
+    /* background-image: url("../images/steven-starry-background.png"); */
 }
 
 #header {
@@ -21,18 +21,18 @@ body{
 }
 
 .button-one {
-    background-image: url("/assets/images/garnet.jpg");
+    /* background-image: url("../images/garnet.jpg"); */
 }
 
 .button-two {
-    background-image: url("/assets/images/amethyst.jpg");
+    /* background-image: url("../images/amethyst.jpg"); */
 }
 
 .button-three {
-    background-image: url("/assets/images/pearl.jpg");
+    /* background-image: url("../images/pearl.jpg"); */
 
 }
 
 .button-four {
-    background-image: url("/assets/images/steven.jpg");
+    /* background-image: url("..images/steven.jpg"); */
 }
