@@ -34,7 +34,7 @@ body{
 .img-btn{
     height: 6rem;
     width: 6rem;
-    border-radius: 1rem; 
+    /* border-radius: 1rem;  */
     border: .25rem solid blueviolet;
 
 }
@@ -47,12 +47,29 @@ body{
     justify-content: right; */  
 }
 
-.counter-container {
+.button-one {
+    background-image: url("../images/garnet.jpg");
+    background-size: contain;
+}
+.button-two {
+    background-image: url("../images/amethyst.jpg");
+    background-size: contain;
+}
+.button-three {
+    background-image: url("../images/pearl.jpg");
+    background-size: contain;
+}
+.button-four {
+    background-image: url("../images/steven.jpg");
+    background-size: contain;
+}
+
+/* .counter-container { */
     /* display: flexbox; */
     
 }
 
-.button-container {
+/* .button-container { */
     /* display: flexbox; */
 }
 /* .button-three {
